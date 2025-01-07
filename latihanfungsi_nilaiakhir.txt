@@ -1,0 +1,33 @@
+def NilaiAkhir (kehadiran, tugas, uts, uas):
+    na = (0.1 * float(kehadiran)) + (0.2 * float(tugas)) + (0.3 * float(uts)) + (0.4 * float(uas))
+    return na
+
+def NilaiMutu(nilai):
+    if(nilai>=85):
+        mutu = "A"
+    elif(nilai>=75):
+        mutu = "B"
+    elif(nilai>=55):
+        mutu = "C"
+    elif(nilai>=40):
+        mutu = "D"
+    else:
+        mutu = "E"
+    return mutu
+
+kehadiran = float(input ("\nNilai Kehadiran'mu : "))
+tugas = float(input ("Nilai Tugas'mu\t : "))
+uts = float(input ("Nilai UTS'mu\t : "))
+uas = float(input ("Nilai UAS'mu\t : "))
+
+na = NilaiAkhir (kehadiran, tugas, uts, uas)
+
+print('Kehadiran : ', kehadiran)
+print('Tugas : ', tugas)
+print('UTS : ', uts)
+print('UAS : ', uas)
+print('Nilai Akhir : ', na)
+
+mutu = NilaiMutu(na)
+
+print('Nilai Mutu : ', mutu)

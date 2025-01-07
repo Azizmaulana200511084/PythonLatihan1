@@ -1,0 +1,19 @@
+class Bola():
+    def __init__(self):
+        self.__jarijaribola = None
+    
+    @property
+    def jarijaribola(self):
+        return self.__jarijaribola
+    
+    @jarijaribola.setter
+    def jarijaribola(self, value):
+        self.__jarijaribola = value
+
+    def LuasPermukaanBola(self):
+        LPB = (4 * 3.14 * self.__jarijaribola * self.__jarijaribola)
+        return LPB
+
+    def VolumeBola(self):
+        VB = (4 / 3 * 3.14 * self.__jarijaribola * self.__jarijaribola * self.__jarijaribola)
+        return VB
